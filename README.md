@@ -37,3 +37,6 @@ It explores the **design, performance constraints, and scalability challenges** 
 
 /queries.sql
 
+## 🔮 Next Steps
+- Add **materialized views** to reduce query time for repeated joins.  
+- Benchmark SQL performance vs. a **NoSQL alternative** for real-time scalability. 

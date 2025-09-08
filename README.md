@@ -1,31 +1,25 @@
 # Airline Reservation System — SQL Project
 
 ## 📌 Overview
-This project was completed as part of **DSE6210: Big Data SQL and NoSQL**.  
-It explores the **design, performance constraints, and scalability challenges** of an airline reservation system database.
+This project explores the design and performance challenges of an airline reservation system using SQL. It was completed as part of **DSE6210: Big Data SQL and NoSQL**.
 
 ## 🎯 Objectives
-- Design relational tables to represent passengers, flights, reservations, and payments.  
-- Analyze performance issues when handling customer queries **without SQL views**.  
-- Compare scalability challenges in a **first-normal form (1NF) RDBMS**.  
-- Demonstrate optimization strategies including **views, indexing, and partitioning**.  
+- Build normalized relational tables for flights, passengers, and reservations.  
+- Analyze performance issues without SQL views.  
+- Evaluate scalability in a 1NF relational model.  
+- Explore optimizations such as views, indexing, and partitioning.  
 
 ## 🗂️ Deliverables
-- **Entity Relationship Diagram (ERD)** – database schema for flights, customers, reservations, and itineraries.  
-- **SQL Queries (`queries.sql`)** – table creation and queries including:  
-  - `Passenger_Itinerary` view  
-  - `Customers_On_Flight` view  
-  - `Flights_By_Airport` view  
-  - `Flight_Status` and `Flight_Sales` views  
-- **Research Paper (`project-paper.pdf`)** – analysis of performance constraints and scaling strategies.  
+- `erd-diagram-highres.png` → Entity Relationship Diagram  
+- `queries.sql` → SQL table creation and queries  
+- `project-paper.pdf` → Analytical write-up  
 
 ## 🛠️ Key Insights
-- Without views, repeated queries cause **performance bottlenecks** due to heavy joins.  
-- **Indexes** on fields like `flight_number` and `passenger_id` improve query response times.  
-- **Partitioning** large tables (e.g., `Itinerary_Reservations`) helps manage scaling in transactional systems.  
-- For highly transactional apps, **NoSQL solutions (e.g., MongoDB, Cassandra)** may provide better scalability.  
+- Without views, repeated joins create performance bottlenecks.  
+- **Indexes and partitioning** improve query performance in large datasets.  
+- SQL scales well for structured data but may require **NoSQL support** for high-volume, real-time workloads.  
 
-## 📊 Visuals
+## 📊 Example: ERD Diagram
 ![ERD Diagram](erd-diagram-highres.png)
 
 ## 📂 Repo Structure

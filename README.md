@@ -30,10 +30,10 @@ It explores the **design, performance constraints, and scalability challenges** 
 
 ## 📂 Repo Structure
 /README.md ← this file
+
 /erd-diagram-highres.png
+
 /project-paper.pdf
+
 /queries.sql
 
-## 🔮 Next Steps
-- Extend queries with **materialized views** for faster performance.  
-- Explore a **hybrid SQL + NoSQL** design for real-time scalability.  
